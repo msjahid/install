@@ -37,7 +37,7 @@ conda update conda
 conda update ipython
 
 
-
+path pycharm and spyder = /home/msjahid/anaconda3/bin/python3.6
 
 
 
