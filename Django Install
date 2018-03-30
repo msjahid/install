@@ -146,4 +146,62 @@ Django version 2.0.3, using settings 'website.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
+------------------------------------------------------------Djano Open jupyter notebook-------------------------------------------------------------
+1) pip install django-extensions
+
+Now go to your django project folder in terminal Then type
+
+msjahid@msjahid:~/Django/website$ jupyter notebook
+
+If check Requirement satisfication then follow the process
+
+1)  msjahid@msjahid:~/Django/website$ pip install jupyter   ---*******!!#$$$%%%%^^^^^^^^&---Check your python version
+Requirement already satisfied: jupyter in /home/msjahid/anaconda3/lib/python3.6/site-packages
+Requirement already satisfied: notebook in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+Requirement already satisfied: qtconsole in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+Requirement already satisfied: jupyter-console in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+Requirement already satisfied: nbconvert in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+Requirement already satisfied: ipykernel in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+
+Requirement already satisfied: ipywidgets in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter)
+Requirement already satisfied: jinja2 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: tornado>=4 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: ipython_genutils in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: traitlets>=4.2.1 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: jupyter_core>=4.4.0 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: jupyter_client>=5.2.0 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: nbformat in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: Send2Trash in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: terminado>=0.8.1 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from notebook->jupyter)
+Requirement already satisfied: ipython in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter-console->jupyter)
+Requirement already satisfied: prompt_toolkit<2.0.0,>=1.0.0 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter-console->jupyter)
+Requirement already satisfied: pygments in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter-console->jupyter)
+Requirement already satisfied: mistune>=0.7.4 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: entrypoints>=0.2.2 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: bleach in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: pandocfilters>=1.4.1 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: testpath in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbconvert->jupyter)
+Requirement already satisfied: widgetsnbextension~=3.1.0 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipywidgets->jupyter)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jinja2->notebook->jupyter)
+Requirement already satisfied: six in /home/msjahid/anaconda3/lib/python3.6/site-packages (from traitlets>=4.2.1->notebook->jupyter)
+Requirement already satisfied: decorator in /home/msjahid/anaconda3/lib/python3.6/site-packages (from traitlets>=4.2.1->notebook->jupyter)
+Requirement already satisfied: pyzmq>=13 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter_client>=5.2.0->notebook->jupyter)
+Requirement already satisfied: python-dateutil>=2.1 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jupyter_client>=5.2.0->notebook->jupyter)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from nbformat->notebook->jupyter)
+Requirement already satisfied: setuptools>=18.5 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipython->jupyter-console->jupyter)
+Requirement already satisfied: jedi>=0.10 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipython->jupyter-console->jupyter)
+Requirement already satisfied: pickleshare in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipython->jupyter-console->jupyter)
+Requirement already satisfied: simplegeneric>0.8 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipython->jupyter-console->jupyter)
+Requirement already satisfied: pexpect in /home/msjahid/anaconda3/lib/python3.6/site-packages (from ipython->jupyter-console->jupyter)
+Requirement already satisfied: wcwidth in /home/msjahid/anaconda3/lib/python3.6/site-packages (from prompt_toolkit<2.0.0,>=1.0.0->jupyter-console->jupyter)
+Requirement already satisfied: html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre in /home/msjahid/anaconda3/lib/python3.6/site-packages (from bleach->nbconvert->jupyter)
+Requirement already satisfied: parso==0.1.* in /home/msjahid/anaconda3/lib/python3.6/site-packages (from jedi>=0.10->ipython->jupyter-console->jupyter)
+Requirement already satisfied: webencodings in /home/msjahid/anaconda3/lib/python3.6/site-packages (from html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach->nbconvert->jupyter)
+
+
+
+2) msjahid@msjahid:~/Django/website$ pip install django-extensions   ---*******!!#$$$%%%%^^^^^^^^&---Check your python version
+Requirement already satisfied: django-extensions in /home/msjahid/anaconda3/lib/python3.6/site-packages
+Requirement already satisfied: six>=1.2 in /home/msjahid/anaconda3/lib/python3.6/site-packages (from django-extensions)
+
 
