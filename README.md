@@ -602,6 +602,13 @@ psql -c "ALTER USER postgres WITH PASSWORD 'secure_password_here';"
 exit
 sudo systemctl restart postgresql 
 ```
+### pgAdmin 4 install
+```bash
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+sudo apt update
+sudo apt install pgadmin4 
+```
 ## Gimp install with GMIC and Resynthesizer  
 Launch Terminal and following these below command
 ```bash
