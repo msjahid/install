@@ -3,6 +3,9 @@
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
+sudo apt install gnome-shell-extensions
+sudo apt install gnome-tweaks
+sudo apt install htop
 sudo apt-get install snapd
 sudo apt install python3-pip
 ```
