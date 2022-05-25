@@ -664,5 +664,5 @@ sudo make install
 ```
 **Python idle specific version**:
 ```bash
-sudo apt-get install idle-python3.6
+sudo apt-get install idle-python3.10
 ```
