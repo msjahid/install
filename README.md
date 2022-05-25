@@ -594,6 +594,13 @@ GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres;
 ```
 postgres=# \l
 ```
+**Secure PostgreSQL**:
+```bash
+sudo passwd postgres
+# su - postgres 
+psql -c "ALTER USER postgres WITH PASSWORD 'secure_password_here';" 
+exit
+```
 ## Gimp install with GMIC and Resynthesizer  
 Launch Terminal and following these below command
 ```bash
