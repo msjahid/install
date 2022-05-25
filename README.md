@@ -8,6 +8,7 @@ sudo apt install gnome-tweaks
 sudo apt install htop
 sudo apt-get install snapd
 sudo apt install python3-pip
+sudo apt install spyder
 ```
 
 ## Xampp and Mysql 
@@ -635,4 +636,18 @@ npm install -g fx
 **use fx command**:
 ```bash
 curl https://api.coindesk.com/v1/bpi/currentprice.json | fx .
+```
+# Python Specific version install not mandatory
+```bash
+sudo apt-get install libssl-dev openssl
+wget https://www.python.org/ftp/python/3.5.0/Python-3.10.4.tgz
+tar xzvf Python-3.10.4.tgz
+cd Python-3.10.04
+./configure
+make
+sudo make install
+```
+**Python idle specific version**:
+```bash
+sudo apt-get install idle-python3.6
 ```
