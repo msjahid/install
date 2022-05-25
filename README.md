@@ -627,3 +627,12 @@ pip3 install --upgrade jupyterthemes
 jt -l #list of all themes
 jt -t chesterish
 ```
+## How to Work With JSON in Your Terminal With fx
+```bash
+sudo apt install curl
+npm install -g fx
+```
+**use fx command**:
+```bash
+curl https://api.coindesk.com/v1/bpi/currentprice.json | fx .
+```
