@@ -603,3 +603,27 @@ sudo flatpak install org.gimp.GIMP.Plugin.GMic//2-40
 sudo flatpak install org.gimp.GIMP.Plugin.Resynthesizer//2-40
 sudo flatpak install org.gimp.GIMP.Plugin.BIMP//2-40
 ```
+# Machine Learning Tools & Library
+```bash
+pip3 install pandas
+pip3 install numpy
+pip3 install scipy
+pip3 install -U scikit-learn
+pip3 install seaborn
+pip3 install streamlit
+```
+**Jupyter Autocomplete Extension:
+```bash
+pip3 install jupyter_contrib_nbextensions && jupyter contrib nbextension install
+pip3 install jupyter-tabnine --user
+jupyter nbextension install --py jupyter_tabnine --user
+jupyter nbextension enable --py jupyter_tabnine --user
+jupyter serverextension enable --py jupyter_tabnine --user
+```
+**Jupyter Themes:
+```bash
+pip3 install jupyterthemes
+pip3 install --upgrade jupyterthemes
+jt -l #list of all themes
+jt -t chesterish
+```
