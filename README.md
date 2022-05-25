@@ -590,4 +590,13 @@ GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres;
 ```
 postgres=# \l
 ```
-
+## Gimp install with GMIC and Resynthesizer  
+Launch Terminal and following these below command
+```bash
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install https://dl.flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+sudo flatpak install org.gimp.GIMP.Plugin.GMic//2-40
+sudo flatpak install org.gimp.GIMP.Plugin.Resynthesizer//2-40
+sudo flatpak install org.gimp.GIMP.Plugin.BIMP//2-40
+```
