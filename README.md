@@ -612,7 +612,7 @@ pip3 install -U scikit-learn
 pip3 install seaborn
 pip3 install streamlit
 ```
-**Jupyter Autocomplete Extension:
+**Jupyter Autocomplete Extension**:
 ```bash
 pip3 install jupyter_contrib_nbextensions && jupyter contrib nbextension install
 pip3 install jupyter-tabnine --user
@@ -620,7 +620,7 @@ jupyter nbextension install --py jupyter_tabnine --user
 jupyter nbextension enable --py jupyter_tabnine --user
 jupyter serverextension enable --py jupyter_tabnine --user
 ```
-**Jupyter Themes:
+**Jupyter Themes**:
 ```bash
 pip3 install jupyterthemes
 pip3 install --upgrade jupyterthemes
