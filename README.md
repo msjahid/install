@@ -29,6 +29,36 @@ Adding password Xampp and MySQL, phpMyAdmin
 ```bash
 sudo /opt/lampp/lampp security
 ```
+## Back up MySQL or MariaDB database
+to back up the database to a file called **mydata-backup.sql**, use the following command syntax. This will prompt you for a password when entering the command.
+```bash
+mysqldump -u root -p mydata > mydata-backup.sql
+```
+If you need to avoid the password prompt, such as the case in a Bash script, then you can put the password into the command itself by using the **--password** option.
+```bash
+mysqldump -u root --password="mypassword" mydata > mydata-backup.sql
+```
+to back up the database to some other location than your present working directory, just put the path in your command.
+```bash
+mysqldump -u root -p mydata > /home/linuxconfig/mysql/mydata-backup.sql
+```
+to back up more than one database at once, you can list them separately in your command after the **--databases** option. In this example, we will backup the databases **mydata** and **accounting**.
+```bash
+mysqldump -u root -p --databases mydata accounting > mydata-backup.sql
+```
+You can also make a backup of every MySQL or MariaDB database at once by specifying the **--all-databases** option.
+```bash
+mysqldump -u root -p --all-databases > mydata-backup.sql
+```
+## Restore a MySQL or MariaDB database backup
+This command will restore our database data to our mydata database from previous examples.
+```bash
+mysql -u root -p mydata < mydata-backup.sql
+```
+If your backup file contains multiple databases, you can select which ones to restore by using the --one-database flag in your command.
+```bash
+mysql --one-database mydata < mydata-backup.sql
+```
 ## Neovim install configure 
 At first install Neovim
 ```bash
