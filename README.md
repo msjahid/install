@@ -29,6 +29,10 @@ Adding password Xampp and MySQL, phpMyAdmin
 ```bash
 sudo /opt/lampp/lampp security
 ```
+Open xampp GUI through the terminal
+```bash
+sudo /opt/lampp/manager-linux-x64.run
+```
 ## Back up MySQL or MariaDB database
 to back up the database to a file called **mydata-backup.sql**, use the following command syntax. This will prompt you for a password when entering the command.
 ```bash
