@@ -716,3 +716,11 @@ Now find your ip address using the *ifconfig'* command
 ```bash
 nmap -sP 192.168.12.208/24
 ```
+## Git configure
+```bash
+git config --global user.name "msjahid" 
+git config --global user.email "msjahid.ai@gmail.com"
+# Checking command
+git config --global user.name
+git config --global user.email
+```
