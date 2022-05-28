@@ -4,6 +4,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo apt install gnome-shell-extensions
+sudo apt install net-tools
 sudo apt install gnome-tweaks
 sudo apt install htop
 sudo apt-get install snapd
@@ -706,4 +707,12 @@ sudo make install
 **Python idle specific version**:
 ```bash
 sudo apt-get install idle-python3.10
+```
+## Install the network scanning tool Nmap
+```bash
+sudo apt install nmap
+```
+Now find your ip address using the *ifconfig'* command
+```bash
+nmap -sP 192.168.12.208/24
 ```
