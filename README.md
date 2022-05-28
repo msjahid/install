@@ -136,6 +136,13 @@ Debug true mode for developing
 yarn global add nodemon
 #just run your code insted of node to nodemon
 ```
+**Nodemon use in npm or yarn command**:
+```bash
+sudo npm install -g nodemon
+#or
+sudo yarn global add nodemon
+sudo nodemon -v
+```
 ## Git
 
 ###### Cloning remote
