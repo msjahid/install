@@ -724,3 +724,9 @@ git config --global user.email "msjahid.ai@gmail.com"
 git config --global user.name
 git config --global user.email
 ```
+##Mongodb Warning 
+```bash
+echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+sudo apt-get update
+sudo apt-get install libssl1.1
+```
