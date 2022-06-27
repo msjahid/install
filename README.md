@@ -730,3 +730,7 @@ echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /et
 sudo apt-get update
 sudo apt-get install libssl1.1
 ```
+##Heroku Postgresql Postbird
+```bash
+postgres://ogighaslynkoep:0625ef9b305e7768c170ecab1b69a3e3f03450368adb1f08100d3465cd68ca5a@ec2-44-205-41-76.compute-1.amazonaws.com:5432/dfj7frahkcae9k?ssl=verify-full
+```
