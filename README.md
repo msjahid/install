@@ -724,13 +724,14 @@ git config --global user.email "msjahid.ai@gmail.com"
 git config --global user.name
 git config --global user.email
 ```
-##Mongodb Warning 
+## Mongodb Warning 
 ```bash
 echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
 sudo apt-get update
 sudo apt-get install libssl1.1
 ```
-##Heroku Postgresql Postbird
+## Heroku Postgresql Postbird
 ```bash
 postgres://ogighaslynkoep:0625ef9b305e7768c170ecab1b69a3e3f03450368adb1f08100d3465cd68ca5a@ec2-44-205-41-76.compute-1.amazonaws.com:5432/dfj7frahkcae9k?ssl=verify-full
 ```
+Other software "ssl=no-verify" if not working then use settings>Config Vars>add Key {GSSLMODE}, value{no-verify}
