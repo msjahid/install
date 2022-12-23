@@ -200,13 +200,19 @@ git remote -v
 ```
 ###### Setting Global Username
 ```
-git config --global user.name "siyam04"
+git config --global user.name "msjahid"
 ```
 ###### Setting Global Email
 ```
-git config --global user.email "galib.abdullah04@gmail.com" 
+git config --global user.email "msjahid.ai@gmail.com" 
 ```
-
+###### Check username, email
+```
+git config --global user.name
+```
+```
+git config --global user.email
+```
 --------------------------------------------------------------------------------
 
 ## Heroku
