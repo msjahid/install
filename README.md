@@ -657,6 +657,12 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 sudo apt update
 sudo apt install pgadmin4 
 ```
+Fixed error in W: Key is stored in legacy trusted.gpg keyring
+```bash
+cd /etc/apt
+sudo cp trusted.gpg trusted.gpg.d
+```
+
 ## Gimp install with GMIC and Resynthesizer  
 Launch Terminal and following these below command
 ```bash
@@ -741,3 +747,80 @@ sudo apt-get install libssl1.1
 postgres://ogighaslynkoep:0625ef9b305e7768c170ecab1b69a3e3f03450368adb1f08100d3465cd68ca5a@ec2-44-205-41-76.compute-1.amazonaws.com:5432/dfj7frahkcae9k?ssl=verify-full
 ```
 Other software "ssl=no-verify" if not working then use settings>Config Vars>add Key {GSSLMODE}, value{no-verify}
+
+## Desktop Entry Anaconda, Jupyter, Spyder
+Anaconda-Navigator
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Anaconda-Navigator
+GenericName=Anaconda
+Comment=Scientific Python Development Environment - Python3
+Exec=/home/msjahid/anaconda3/bin/anaconda-navigator
+Categories=Development;Science;IDE;Qt;Education;
+Icon=/home/msjahid/anaconda3/lib/python3.11/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
+Spyder
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Spyder
+GenericName=Spyder
+Comment=The Scientific Python Development Environment
+Exec=/home/msjahid/anaconda3/bin/spyder
+Categories=Development;Science;IDE;Qt;
+Icon=/home/msjahid/anaconda3/lib/python3.11/site-packages/anaconda_navigator/static/images/spyder-icon-1024x1024.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
+Jupyter-notebook
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Jupyter-Notebook
+GenericName=Notebook
+Comment=Comment=Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.
+Exec=/home/msjahid/anaconda3/bin/jupyter-notebook
+Categories=Development;Science;IDE;Qt;Education;
+Icon=/home/msjahid/anaconda3/lib/python3.11/site-packages/anaconda_navigator/static/images/jupyter-icon-1024x1024.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
+Jupyter Lab
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Jupyter-Lab
+GenericName=JupyterLab
+Comment=Comment=Open-source web-based interactive development environment for Jupyter notebooks, code, and data.
+Exec=/home/msjahid/anaconda3/bin/jupyter-lab
+Categories=Development;Science;IDE;Qt;Education;
+Icon=/home/msjahid/anaconda3/lib/python3.11/site-packages/anaconda_navigator/static/images/jupyterlab-icon-1024x1024.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
+Ipython Console
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Jupyter QTConsole
+GenericName=Interactive Python Shell
+Comment=Comment=Enhanced interactive Python shell
+Exec=/home/msjahid/anaconda3/bin/jupyter-qtconsole
+Categories=Development;IPython;Console;Python;IDE;Development;
+Icon=/home/msjahid/anaconda3/lib/python3.11/site-packages/anaconda_navigator/static/images/qtconsole-icon-1024x1024.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
