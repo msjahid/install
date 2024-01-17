@@ -701,6 +701,7 @@ jt -t chesterish
 ```bash
 sudo apt install curl
 npm install -g fx
+# *** Insted of npm use sudo snap install fx
 ```
 **use fx command**:
 ```bash
@@ -747,6 +748,38 @@ sudo apt-get install libssl1.1
 postgres://ogighaslynkoep:0625ef9b305e7768c170ecab1b69a3e3f03450368adb1f08100d3465cd68ca5a@ec2-44-205-41-76.compute-1.amazonaws.com:5432/dfj7frahkcae9k?ssl=verify-full
 ```
 Other software "ssl=no-verify" if not working then use settings>Config Vars>add Key {GSSLMODE}, value{no-verify}
+
+## CSVfile readable, nbterm, pgcli
+Read the full [CSVKit](https://csvkit.readthedocs.io/en/0.9.1/index.html) offical documentation.
+
+```bash
+pip install csvkit
+# for multiple python version
+python3.10 -m pip install csvkit
+```
+
+Basics some command and bonus tips find out the all .csv file in your current directory
+```bash
+find *.csv
+csvstat data.csv
+csvlook data.csv # cat data.csv
+```
+
+[Nbterm](https://github.com/davidbrochart/nbterm) or Jupyter Notebook in the terminal.
+
+```bash
+pip install nbterm
+```
+
+[Pgcli](https://github.com/dbcli/pgcli) is a command line interface for Postgres with auto-completion and syntax highlighting.
+
+```bash
+pip install pgcli
+$ sudo -i -u postgres
+$ pgcli
+```
+```
+
 
 ## Desktop Entry Anaconda, Jupyter, Spyder
 Anaconda-Navigator
