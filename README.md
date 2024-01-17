@@ -778,8 +778,6 @@ pip install pgcli
 $ sudo -i -u postgres
 $ pgcli
 ```
-```
-
 
 ## Desktop Entry Anaconda, Jupyter, Spyder
 Anaconda-Navigator
