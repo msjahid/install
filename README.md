@@ -855,3 +855,27 @@ Terminal=false
 StartupNotify=true
 MimeType=text/x-python;
 ```
+
+# Linux Terminal Basic Command
+```bash
+ctrl + u = erase everything from the current cursor 
+ctrl + k = Cuts the line after the cursor to the clipboard
+ctrl + a = move the cursor to the beginning of the line
+ctrl + y = common shortcut to redo an action
+ctrl + shift + up arrow = move text upwise
+ctrl + shift + down arrow = move text downwise
+ctrl + n = New Terminal Window
+ctrl + r = start the reverse-i search
+ctrl + page up = Move terminal Tab
+ctrl + page down = Move terminal Tab
+ctrl + c = Copy text
+ctrl + v = Paste Text
+ctrl ++ = Zoom in
+ctrl +- = Zoom out
+ctrl + f = Find text
+ctrl + t = Create New Terminal Tab
+ctrl + n = Create New Terminal Window
+ctrl + w = Close Current Terminal Tab
+ctrl + shift + w = Close current Window
+ctrl + l = Clears the screen
+```
