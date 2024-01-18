@@ -895,4 +895,8 @@ rm data.py # remove single file
 rm data.py data.ipynb # Delete multiple files
 rm -- test.* # Remove all test files don't care about their extension
 rm -rf test # Remove directory
+touch data.py && jupytext --to notebook data.py # two line command using in single line you can use ; instead of && look like
+# touch data.py; jupytext --to notebook data.py
+# cmd1 || cmd2
+$ cd myfolder || ls  # if failed cd to myfolder, `ls` will run
 ```
