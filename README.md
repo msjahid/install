@@ -749,7 +749,7 @@ postgres://ogighaslynkoep:0625ef9b305e7768c170ecab1b69a3e3f03450368adb1f08100d34
 ```
 Other software "ssl=no-verify" if not working then use settings>Config Vars>add Key {GSSLMODE}, value{no-verify}
 
-## CSVfile readable, nbterm, pgcli
+## CSVfile readable, nbterm, pgcli, jupytext
 Read the full [CSVKit](https://csvkit.readthedocs.io/en/0.9.1/index.html) offical documentation.
 
 ```bash
@@ -763,6 +763,7 @@ Basics some command and bonus tips find out the all .csv file in your current di
 find *.csv
 csvstat data.csv
 csvlook data.csv # cat data.csv
+csvlook --max-rows 75 data.csv 
 ```
 
 [Nbterm](https://github.com/davidbrochart/nbterm) or Jupyter Notebook in the terminal.
@@ -778,6 +779,15 @@ pip install pgcli
 $ sudo -i -u postgres
 $ pgcli
 ```
+[Jupytext](https://jupytext.readthedocs.io/en/latest/install.html) provides a contents manager that let Jupyter open and save notebooks as text files.
+
+```bash
+pip install jupytext
+$ touch data.py
+$ jupytext --to notebook data.py
+$ jupyter-notebook data.ipynb 
+```
+After selecting the kernel then you can use it above nbterm ways. 
 
 ## Desktop Entry Anaconda, Jupyter, Spyder
 Anaconda-Navigator
