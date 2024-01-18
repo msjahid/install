@@ -657,6 +657,16 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 sudo apt update
 sudo apt install pgadmin4 
 ```
+Configure PgAdmin4 after installing Add New Server > General > Name > 'localhost'> connection Host name/address > 127.0.0.1 
+fixed error for the password open terminal
+
+```bash
+sudo -i -u postgres
+$ psql
+\password postgres
+# Enter your password 
+```
+
 Fixed error in W: Key is stored in legacy trusted.gpg keyring
 ```bash
 cd /etc/apt
