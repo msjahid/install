@@ -787,7 +787,7 @@ $ touch data.py
 $ jupytext --to notebook data.py
 $ jupyter-notebook data.ipynb 
 ```
-After selecting the kernel then you can use it above nbterm ways. 
+After selecting the kernel in the Jupter Notebook press Ctrl + S which means save then you can use it above nbterm ways. 
 
 ## Desktop Entry Anaconda, Jupyter, Spyder
 Anaconda-Navigator
