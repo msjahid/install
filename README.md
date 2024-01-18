@@ -866,7 +866,7 @@ StartupNotify=true
 MimeType=text/x-python;
 ```
 
-# Linux Terminal Basic Command
+# Linux Terminal Basic Keyboard Shorcurt
 ```bash
 ctrl + u = erase everything from the current cursor 
 ctrl + k = Cuts the line after the cursor to the clipboard
@@ -888,4 +888,11 @@ ctrl + n = Create New Terminal Window
 ctrl + w = Close Current Terminal Tab
 ctrl + shift + w = Close current Window
 ctrl + l = Clears the screen
+```
+# Basic Shell command
+```bash
+rm data.py # remove single file
+rm data.py data.ipynb # Delete multiple files
+rm -- test.* # Remove all test files don't care about their extension
+rm -rf test # Remove directory
 ```
