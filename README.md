@@ -715,7 +715,7 @@ export PATH=/Library/TeX/texbin:$PATH # if path missing default no need
 jupyter nbconvert --execute --to pdf test.ipynb
 ```
 
-**Jupyter Markdown Image"
+**Jupyter Markdown Image**:
 ```bash
 ![alt](population-variance.png) | ![alt](sample-variance.png)
 
