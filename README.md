@@ -707,6 +707,25 @@ pip3 install --upgrade jupyterthemes
 jt -l #list of all themes
 jt -t chesterish
 ```
+
+**Jupyter ipynb to pdf**:
+```bash
+sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+export PATH=/Library/TeX/texbin:$PATH # if path missing default no need
+jupyter nbconvert --execute --to pdf test.ipynb
+```
+
+**Jupyter Markdown Image"
+```bash
+![alt](population-variance.png) | ![alt](sample-variance.png)
+
+<table><tr>
+<td> <img src="test.png" alt="Drawing" style="width: 500px;"/> </td>
+<td> <img src="test2.png" alt="Drawing" style="width: 500px;"/> </td>
+</tr></table>
+```
+
+
 ## How to Work With JSON in Your Terminal With fx
 ```bash
 sudo apt install curl
